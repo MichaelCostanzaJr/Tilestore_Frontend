@@ -1,0 +1,13 @@
+.cart {
+  background-color: black;
+}
+
+.cart h1 {
+  color: darkgray;
+  text-align: center;
+}
+
+.cart h2 {
+    color: whitesmoke;
+    text-align: center;
+}

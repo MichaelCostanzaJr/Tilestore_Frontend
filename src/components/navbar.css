@@ -1,3 +1,8 @@
-.navbar h1 {
-    color: red;
+.navbar {
+    background-color: black;
+    
+}
+
+nav.navbar ul li a { 
+    color: blue !important;
 }
