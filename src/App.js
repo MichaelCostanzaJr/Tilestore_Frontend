@@ -11,10 +11,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GlobalStoreProvider from "./context/globalStoreProvider";
 
 function App() {
   return (
     <div className="App">
+      <GlobalStoreProvider>
       <BrowserRouter>
         <Navbar />
 
@@ -28,6 +30,7 @@ function App() {
 
         <Footer />
       </BrowserRouter>
+      </GlobalStoreProvider>
     </div>
   );
 }

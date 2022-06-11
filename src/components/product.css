@@ -1,5 +1,5 @@
-.product h3 {
-    color:blueviolet;
+.product h2 {
+    color:black;
 }
 
 .product{
@@ -8,14 +8,19 @@
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px black;
+    background: linear-gradient(90deg ,red ,white, blue);
 }
 
-.product label{
+.product label {
     display: block;
+    font-size: 25px;
+    color: black;
 }
 
 .product .productImg{
     height: 350px;
     width: 350px;
 }
+
+

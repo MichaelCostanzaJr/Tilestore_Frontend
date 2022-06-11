@@ -1,7 +1,27 @@
-.catalog h2{ 
-    color: blue;
+.catalog {
+    background-image: url(/public/img/IMAGE_BACKGROUND.jpeg)
+    ;
+    background-size: 25%;
+    ;
+    
+   
+}
+.background_header {
+    background-image: linear-gradient(to right, red,white,blue);
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 10px 10px red;
+   
 }
 
-.catalog h3{
-    color: blue;
+.catalog .h1 {
+    color: black;
+    font-size: 50px;
 }
+
+.catalog  .h3{
+    color: black;
+    font-size: 25px;
+}
+

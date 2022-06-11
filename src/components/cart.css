@@ -8,6 +8,15 @@
 }
 
 .cart h2 {
-    color: whitesmoke;
-    text-align: center;
+  color: whitesmoke;
+  text-align: center;
+}
+.cart h3 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.cart ul li {
+  color: whitesmoke;
+  font-size: 40px;
 }
