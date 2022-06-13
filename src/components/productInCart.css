@@ -1,0 +1,27 @@
+.product-cart{
+    display: flex;
+}
+
+.description{
+    flex: 2;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.product-cart label {
+    flex: 2;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+.product-cart .productImg {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.btn  {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

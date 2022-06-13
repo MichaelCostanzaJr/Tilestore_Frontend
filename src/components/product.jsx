@@ -18,7 +18,7 @@ const Product = (props) => {
 
   const addProduct = () => {
     console.log("adding product to cart", props.data.title);
-    let prodForCart = {...props.data, quantity };
+    let prodForCart = {...props.data, quantity: quantity };
     addProdToCart(prodForCart);
     };
 
@@ -26,10 +26,16 @@ const Product = (props) => {
     <div className="product">
       <img className="productImg" src={"/img/" + props.data.image}></img>
       <h2>{props.data.title}</h2>
-      <label className="price">Price: ${props.data.price}</label>
-      <label className="total">Total: ${getTotal()}</label>
-      <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
-      <button onClick={addProduct} className="btn btn-danger">Add</button>
+
+      <div className="prices">
+        <label className="total">Total: ${getTotal()}</label>
+        <label className="price">Price: ${props.data.price}</label>
+
+      </div>
+      <div className="controls">
+        <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
+        <button onClick={addProduct} className="btn btn-danger">Add</button>
+      </div>
     </div>
   );
 };
