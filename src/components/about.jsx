@@ -12,6 +12,9 @@ const About = () => {
     };
 
     const getContent = () => {
+
+        
+
         if(visible) {
             return <div>
                         <h3>Costanzamike96@gmail.com</h3>
@@ -27,10 +30,17 @@ const About = () => {
     };
 
     return (
-        <div className="about-page">
-            <h1>About Me</h1>
-            <h2>Name: Michael James Costanza Jr</h2>
-            {getContent()}
+        <div className="Test">
+            <div className= "Info">
+                <div className='Video'>
+                    
+                </div>
+            </div>
+            <div className="about-page">
+                <h1>About Me</h1>
+                <h2>Name: Michael James Costanza Jr</h2>
+                {getContent()}
+            </div>
         </div>
     );
 };

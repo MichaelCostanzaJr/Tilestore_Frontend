@@ -1,3 +1,8 @@
+import axios from "axios";
+import Product from '../components/product';
+
+
+
 var catalog = [
     {
         _id: "2572",
@@ -47,12 +52,34 @@ var catalog = [
     ];
 
     class Dataservice{
-      getCatalog(){
+      async getCatalog(){
+
+        // Get data from server
+        let response = await axios.get("http://127.0.0.1:5000/api/catalog");
+        let data = response.data;
+        return data;
         //some instruction to
         //retrieve data from the actual server
         
-        return catalog;
+        //return catalog;
       }
+
+      async getCoupon(){
+        let response = await axios.get("http://127.0.0.1:5000/api/coupons");
+        return response.data;
+        
+      }
+
+      async saveCoupon(coupon) {
+        let response = await axios.post("http://127.0.0.1:5000/api/coupons", coupon);
+        return response.data;
+      }
+
+      async saveProduct(product) {
+        let response = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+        return response.data;
+      }
+
     }
 
     export default Dataservice;
